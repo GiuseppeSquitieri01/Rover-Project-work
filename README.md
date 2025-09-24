@@ -2,7 +2,7 @@
 # Rover Embedded System 
 
 **Embedded Project – University of Salerno**  
-Bachelor in Computer Engineering — A.Y. 2024/2025  
+Master's degree in Computer Engineering — A.Y. 2024/2025  
 
 ## Project Overview
 This project implements the **embedded control system of an autonomous rover** using two **STM32G474RE microcontrollers** (Master and Slave) running **FreeRTOS**.  
@@ -25,7 +25,6 @@ The rover was designed to:
 - **Sensors**:
   - **HC-SR04 Ultrasonic (x3)** → obstacle detection.  
   - **MPU-6050 IMU** → orientation and motion control.  
-  - **ADC** → analog signal acquisition.  
   - **Temperature sensor** → monitors the MCU board temperature;  
     if a critical threshold is exceeded, the system enters **emergency mode** to protect the hardware.  
   - **Encoders** → wheel speed and position.  
@@ -106,7 +105,7 @@ The following tasks are effectively used:
   Immediate **fail-safe** in case of:  
   - **over-temperature** on a board,  
   - lost **SPI link** (timeout),  
-  - mismatch between **commanded velocity** and **encoder feedback**,  
+  - **mismatch between the decisions of the two boards** (the Master’s computed setpoint and the Slave’s feedback/control decision are not consistent),  
   - sensors **out of range** for N consecutive samples,  
   - **BLE controller disconnect**.  
   Actions: cut setpoints, PWM=0, notify Slave, log over UART. *Priority*: high (preempts others).  
