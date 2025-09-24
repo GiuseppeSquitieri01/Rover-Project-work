@@ -1,0 +1,2 @@
+../Core/Src/temperature.c:34:6:TemperatureSensor_Init	8	static
+../Core/Src/temperature.c:44:9:TemperatureSensor_Read	24	static

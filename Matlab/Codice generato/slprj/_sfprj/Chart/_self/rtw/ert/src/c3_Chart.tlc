@@ -1,0 +1,284 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   38 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "B1State"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "B1State"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "B2State"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "B2State"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Enc1"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Enc1"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Enc2"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Enc2"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Enc3"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Enc3"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Enc4"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Enc4"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "PSX_LF"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "PSX_LF"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "PSX_RS"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "PSX_RS"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Temp_B1"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Temp_B1"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Temp_B2"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Temp_B2"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "countTempB1"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "countTempB1"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "countTempB2"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "countTempB2"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "sonar1"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "sonar1"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "sonar2"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "sonar2"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "sonar3"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "sonar3"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "B1State_inB2"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "B1State_inB2"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "B2State_inB1"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "B2State_inB1"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "StatusBoardB2"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "StatusBoardB2"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "B1_decision"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "B1_decision"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "B1_pin"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "B1_pin"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "B2_decision"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "B2_decision"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "B2_pin"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "B2_pin"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Board_state"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Board_state"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "final_decisionB1"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "final_decisionB1"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "final_decisionB2"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "final_decisionB2"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_c3_Chart"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_BOARD1"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "ROVER.BOARD1"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_ACTUATION_TASK_B1"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "ROVER.BOARD1.ACTUATION_TASK_B1"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_COMMUNICATION_TASK_B1"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "ROVER.BOARD1.COMMUNICATION_TASK_B1"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_EMERGENCY_ACTUATION_TASK_B1"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "ROVER.BOARD1.EMERGENCY_ACTUATION_TASK_B1"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_READ_TASK_B1"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "ROVER.BOARD1.READ_TASK_B1"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_BOARD2"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "ROVER.BOARD2"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_COMMUNICATION_TASK_B2"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "ROVER.BOARD2.COMMUNICATION_TASK_B2"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_DEGRADATED_ACTUATION_TASK_B2"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "ROVER.BOARD2.DEGRADATED_ACTUATION_TASK_B2"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_EMERGENCY_ACTUATION_TASK_B2"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "ROVER.BOARD2.EMERGENCY_ACTUATION_TASK_B2"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_READ_TASK_B2"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "ROVER.BOARD2.READ_TASK_B2"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i1"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i2"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

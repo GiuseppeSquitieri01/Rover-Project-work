@@ -1,0 +1,8 @@
+../Core/Src/app_freertos.c:148:6:MX_FREERTOS_Init	16	static
+../Core/Src/app_freertos.c:201:6:letturaTask	24	static
+../Core/Src/app_freertos.c:231:6:comunicazioneTask	16	static
+../Core/Src/app_freertos.c:362:6:degradatoTask	16	static
+../Core/Src/app_freertos.c:386:6:emergenzaTask	16	static
+../Core/Src/app_freertos.c:420:6:dataCheck	16	static
+../Core/Src/app_freertos.c:440:6:degraded	32	static
+../Core/Src/app_freertos.c:488:6:emergency	16	static
