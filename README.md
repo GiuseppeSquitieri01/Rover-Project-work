@@ -2,7 +2,7 @@
 # Rover Embedded System 
 
 **Embedded Project – University of Salerno**  
-Bachelor in Computer Engineering — A.Y. 2023/2024  
+Bachelor in Computer Engineering — A.Y. 2024/2025  
 
 ## Project Overview
 This project implements the **embedded control system of an autonomous rover** using two **STM32G474RE microcontrollers** (Master and Slave) running **FreeRTOS**.  
