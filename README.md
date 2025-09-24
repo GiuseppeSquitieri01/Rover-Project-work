@@ -180,6 +180,4 @@ The following tasks are effectively used:
 
 ---
 
-
-Vuoi che ti prepari anche una versione **short & professional (5-6 righe in inglese)** pensata apposta per il CV, accanto al link GitHub?
 ```
