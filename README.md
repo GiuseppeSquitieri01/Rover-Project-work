@@ -1,11 +1,10 @@
 
-```markdown
-# Rover Embedded System 🚗🔧
+# Rover Embedded System 
 
-**Main Embedded Project – University of Salerno**  
+**Embedded Project – University of Salerno**  
 Bachelor in Computer Engineering — A.Y. 2023/2024  
 
-## 📌 Project Overview
+## Project Overview
 This project implements the **embedded control system of an autonomous rover** using two **STM32G474RE microcontrollers** (Master and Slave) running **FreeRTOS**.  
 It integrates multiple sensors and communication protocols to ensure a robust, safe, and real-time system.  
 
@@ -17,7 +16,7 @@ The rover was designed to:
 
 ---
 
-## 🛠️ Hardware Components
+## Hardware Components
 - **STM32G474RE (Nucleo-64)**: ARM Cortex-M4 MCU with FPU, 170 MHz.  
 - **Communication Interfaces**:
   - **SPI**: data exchange between Master and Slave.  
@@ -35,7 +34,7 @@ The rover was designed to:
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 ```
 
 ├── Master board project/
@@ -60,7 +59,7 @@ The rover was designed to:
 
 ---
 
-## ⚙️ Software Architecture
+## Software Architecture
 
 ### **Master Board**
 - Reads **joystick inputs via I2C**.  
@@ -78,7 +77,7 @@ The rover was designed to:
 
 ---
 
-## ⏱️ FreeRTOS Scheduling – **Master Board**
+## FreeRTOS Scheduling – **Master Board**
 The following tasks are effectively used:
 
 - **Reading Task**  
@@ -119,15 +118,8 @@ The following tasks are effectively used:
 
 ---
 
-## ⏱️ FreeRTOS Scheduling – **Slave Board**
-Tasks implemented exactly as in the code:
+## FreeRTOS Scheduling – **Slave Board**
 
-```c
-void ReadingTask(void *argument);
-void CommunicationTask(void *argument);
-void ActuationTask(void *argument);
-void EmergencyTask(void *argument);
-````
 
 * **ReadingTask**
   Reads **encoders** (wheel speed/position) and local diagnostics (current, voltages if available).
@@ -158,7 +150,7 @@ void EmergencyTask(void *argument);
 
 ---
 
-## 🧩 Safety and Fault Tolerance
+## Safety and Fault Tolerance
 
 * **Over-temperature**: ADC threshold ⇒ emergency mode.
 * **Ultrasonic sensors**: error counters; exceeding limit ⇒ stop. In normal operation, the last valid value is used to avoid oscillations.
@@ -168,7 +160,7 @@ void EmergencyTask(void *argument);
 
 ---
 
-## ▶️ Build & Flash
+## Build & Flash
 
 ### Requirements
 
@@ -185,7 +177,7 @@ void EmergencyTask(void *argument);
 
 ---
 
-## 👨‍💻 Authors
+## Authors
 
 * Giuseppe Squitieri
 * Andrea Scala
