@@ -111,11 +111,6 @@ The following tasks are effectively used:
   - **BLE controller disconnect**.  
   Actions: cut setpoints, PWM=0, notify Slave, log over UART. *Priority*: high (preempts others).  
 
-> **Note**: the two “Reading Tasks” can be split into:  
-> - one for **joystick/user input**,  
-> - one for **on-board sensors**.  
-> The final structure matches the project implementation.  
-
 ---
 
 ## FreeRTOS Scheduling – **Slave Board**
